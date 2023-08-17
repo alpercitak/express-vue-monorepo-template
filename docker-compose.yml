@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      target: deploy-backend
+    ports:
+      - 3000:3000
+  frontend:
+    build:
+      target: deploy-frontend
+    ports:
+      - 5173:80
