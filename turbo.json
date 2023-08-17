@@ -4,8 +4,12 @@
     "dev": {
       "cache": false
     },
+    "clean": {
+      "cache": false
+    },
     "build": {
-      "outputs": ["dist/**"]
+      "outputs": ["dist/**"],
+      "dependsOn": ["clean"]
     }
   }
 }

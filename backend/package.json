@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "main": "src/index.js",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build",
+    "clean": "rm -rf ./dist"
   },
   "keywords": [],
   "author": "",
