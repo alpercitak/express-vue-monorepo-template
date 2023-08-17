@@ -1,15 +1,19 @@
 {
   "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "main": "src/index.js",
   "scripts": {
-    "dev": "node --watch ./src/index.js"
+    "dev": "vite dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "vite": "^4.4.9",
+    "vite-plugin-node": "^3.0.2"
   }
 }
