@@ -1,7 +1,11 @@
 import express from 'express';
+import cors from 'cors';
+
 import { serverPort, add } from 'shared';
 
 const app = express();
+
+app.use(cors());
 
 app.get('/', (req, res) => {
   return res.send({ message: 'Hello World' });
