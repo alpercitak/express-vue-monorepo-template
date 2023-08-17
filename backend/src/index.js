@@ -1,6 +1,6 @@
 import express from 'express';
+import { serverPort } from 'shared';
 
-const port = 3000;
 const app = express();
 
 app.get('/', (req, res) => {
@@ -8,8 +8,8 @@ app.get('/', (req, res) => {
 });
 
 if (import.meta.env.PROD) {
-  app.listen(port, () => {
-    console.log(`${new Date().toISOString()}: [backend] started on http://localhost:${port}`);
+  app.listen(serverPort, () => {
+    console.log(`${new Date().toISOString()}: [backend] started on http://localhost:${serverPort}`);
   });
 }
 
