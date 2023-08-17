@@ -17,6 +17,9 @@ importers:
       express:
         specifier: ^4.18.2
         version: 4.18.2
+      shared:
+        specifier: workspace:*
+        version: link:../shared
     devDependencies:
       vite:
         specifier: ^4.4.9
@@ -27,6 +30,9 @@ importers:
 
   frontend:
     dependencies:
+      shared:
+        specifier: workspace:*
+        version: link:../shared
       vue:
         specifier: ^3.3.4
         version: 3.3.4
@@ -37,6 +43,8 @@ importers:
       vite:
         specifier: ^4.4.9
         version: 4.4.9
+
+  shared: {}
 
 packages:
 

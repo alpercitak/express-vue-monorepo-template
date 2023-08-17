@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "shared": "workspace:*"
   },
   "devDependencies": {
     "vite": "^4.4.9",
